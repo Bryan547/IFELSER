@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/triggerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trigger :"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"></TextView>
+    
+    <RadioGroup
+        android:id="@+id/triggerRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <RadioButton
+            android:id="@+id/triggerRadio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification with specific keyword"/>
+
+        <RadioButton
+            android:id="@+id/triggerRadio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Low Battery"/>
+
+        <RadioButton
+            android:id="@+id/triggerRadio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Trigger"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/keywordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a keyword"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low Battery Threshold"/>
+
+    <EditText
+        android:id="@+id/BatteryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a keyword"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/BatterysubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
