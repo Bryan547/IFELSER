@@ -8,15 +8,18 @@
         android:id="@+id/triggerTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trigger :"
+        android:text="Trigger"
         android:textColor="#000000"
         android:textSize="24sp"
-        android:textStyle="bold"></TextView>
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
     
     <RadioGroup
         android:id="@+id/triggerRadio"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
         
         <RadioButton
             android:id="@+id/triggerRadio1"
@@ -45,30 +48,85 @@
         android:visibility="gone"/>
 
     <Button
-        android:id="@+id/submitButton"
+        android:id="@+id/keywordSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/batteryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter battery threshold"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/batterySubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showTimePickerDialog"
+        android:hint="Select Time"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/timeSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
         android:visibility="gone"/>
 
     <TextView
+        android:id="@+id/actionTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Low Battery Threshold"/>
-
-    <EditText
-        android:id="@+id/BatteryEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter a keyword"
+        android:text="Action"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
         android:visibility="gone"/>
 
+    <RadioGroup
+        android:id="@+id/actionRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/actionRadio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Increase volume to max"/>
+
+        <RadioButton
+            android:id="@+id/actionRadio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn on Do Not Disturb"/>
+
+        <RadioButton
+            android:id="@+id/actionRadio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set brightness to minimum"/>
+    </RadioGroup>
+
     <Button
-        android:id="@+id/BatterysubmitButton"
+        android:id="@+id/actionSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
         android:visibility="gone"/>
-
 
 </LinearLayout>
